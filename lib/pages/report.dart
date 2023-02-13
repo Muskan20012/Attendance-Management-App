@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 
 import 'package:intl/intl.dart';
 
-class LeavePage extends StatefulWidget {
+class ReportPage extends StatefulWidget {
   @override
-  LeavePageState createState() => LeavePageState();
+  State<ReportPage> createState() => ReportPageState();
 }
 
-class LeavePageState extends State<LeavePage>
+class ReportPageState extends State<ReportPage>
     with SingleTickerProviderStateMixin {
   late AnimationController controller;
   DateTime selectedDate = DateTime.now();
@@ -49,7 +49,7 @@ class LeavePageState extends State<LeavePage>
       body: Column(
         children: [
           GradientAppBar(
-            title: "Leave",
+            title: "Report",
           ),
           Container(
             padding: EdgeInsets.symmetric(horizontal: 15),
@@ -101,7 +101,7 @@ class LeavePageState extends State<LeavePage>
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Icon(Icons.fingerprint, size: 50),
-                              Text("Apply Leave")
+                              Text("Get Report")
                             ],
                           ),
                         ),
@@ -111,7 +111,7 @@ class LeavePageState extends State<LeavePage>
                   SizedBox(
                     height: 20,
                   ),
-                  Text("Hold to apply for leave"),
+                  Text("Hold to get report"),
                   SizedBox(
                     height: 20,
                   ),
@@ -128,7 +128,7 @@ class LeavePageState extends State<LeavePage>
                                 ),
                                 width: 20,
                               ),
-                              Text("Total leaves"),
+                              Text("Start Date"),
                             ],
                           ),
                           Text(
@@ -147,7 +147,7 @@ class LeavePageState extends State<LeavePage>
                                 ),
                                 width: 20,
                               ),
-                              Text("Total leaves"),
+                              Text("End Date"),
                             ],
                           ),
                           Text(
@@ -188,7 +188,7 @@ class LeavePageState extends State<LeavePage>
                             width: double.infinity,
                             child: Center(
                               child: Text(
-                                "No leave history found",
+                                "No report found",
                                 style: TextStyle(
                                   fontSize: 28,
                                   color: Colors.grey,

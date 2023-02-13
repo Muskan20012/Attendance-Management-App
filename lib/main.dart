@@ -1,11 +1,14 @@
+// ignore_for_file: unused_import
+
 import 'package:attendence/pages/attendence_screen.dart';
 import 'package:attendence/pages/home_screen.dart';
 import 'package:attendence/pages/leave.dart';
 import 'package:attendence/pages/notification_page.dart';
 import 'package:attendence/pages/setting_page.dart';
+import 'package:attendence/pages/subPages/login.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-
+import 'package:attendence/pages/subPages/login.dart';
 import 'components/drawer_items.dart';
 
 void main() {
@@ -22,7 +25,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(),
+      home: Login(),
     );
   }
 }
@@ -120,7 +123,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Icons.home,
                   //darken the icon if it is selected or else give it a different color
                   color: selectedIndex == 0
-                      ? Colors.blue.shade900
+                      ? Color(0xff6E3CBC)
                       : Colors.grey.shade400,
                 ),
               ),
@@ -132,7 +135,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 icon: Icon(
                   Icons.event_available,
                   color: selectedIndex == 1
-                      ? Colors.blue.shade900
+                      ? Color(0xff6E3CBC)
                       : Colors.grey.shade400,
                 ),
               ),
@@ -147,7 +150,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 icon: Icon(
                   Icons.logout,
                   color: selectedIndex == 2
-                      ? Colors.blue.shade900
+                      ? Color(0xff6E3CBC)
                       : Colors.grey.shade400,
                 ),
               ),
@@ -159,7 +162,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 icon: Icon(
                   Icons.notifications,
                   color: selectedIndex == 3
-                      ? Colors.blue.shade900
+                      ? Color(0xff6E3CBC)
                       : Colors.grey.shade400,
                 ),
               ),

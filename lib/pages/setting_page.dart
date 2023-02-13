@@ -1,4 +1,5 @@
 import 'package:attendence/components/setting_object.dart';
+import 'package:attendence/pages/report.dart';
 import 'package:attendence/pages/subPages/phonebook.dart';
 import 'package:attendence/pages/subPages/remote_attendence.dart';
 import 'package:attendence/pages/leave.dart';
@@ -18,6 +19,9 @@ class SettingPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              SizedBox(
+                height: 25,
+              ),
               Container(
                 width: double.infinity,
                 height: 100,
@@ -29,7 +33,13 @@ class SettingPage extends StatelessWidget {
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    CircleAvatar(radius: 30),
+                    CircleAvatar(
+                      radius: 30,
+                      child: Icon(
+                        Icons.account_circle,
+                        size: 60,
+                      ),
+                    ),
                     SizedBox(
                       width: 20,
                     ),
@@ -55,7 +65,7 @@ class SettingPage extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 10,
+                height: 70,
               ),
               Row(
                 mainAxisSize: MainAxisSize.min,
@@ -104,12 +114,12 @@ class SettingPage extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   SettingObject(
-                    icon: Icons.star,
+                    icon: Icons.call,
                     title: "Phonebook",
                     desination: PhoneBook(),
                   ),
                   SizedBox(width: 10),
-                  SettingObject(icon: Icons.star, title: "Visit"),
+                  SettingObject(icon: Icons.map, title: "Visit"),
                 ],
               ),
               SizedBox(
@@ -118,15 +128,27 @@ class SettingPage extends StatelessWidget {
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  SettingObject(icon: Icons.star, title: "Appointment"),
+                  SettingObject(
+                      icon: Icons.calendar_month, title: "Appointment"),
                   SizedBox(width: 10),
-                  SettingObject(icon: Icons.star, title: "Break"),
+                  SettingObject(
+                      icon: Icons.calendar_view_week_rounded, title: "Break"),
                 ],
               ),
               SizedBox(
                 height: 10,
               ),
-              SettingObject(icon: Icons.star, title: "Daily Leave"),
+              Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  SettingObject(
+                    icon: Icons.summarize,
+                    title: "Report",
+                    desination: ReportPage(),
+                  ),
+                  SizedBox(width: 10),
+                ],
+              ),
             ],
           ),
         ),

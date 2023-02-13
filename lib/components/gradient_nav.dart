@@ -1,3 +1,5 @@
+// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 
 class GradientAppBar extends StatelessWidget {
@@ -12,8 +14,8 @@ class GradientAppBar extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: LinearGradient(
               colors: [
-                const Color(0xFF3366FF),
-                const Color(0xFF00CCFF),
+                const Color(0xff6E3CBC),
+                const Color(0xFFB983FF),
               ],
               begin: const FractionalOffset(0.0, 0.0),
               end: const FractionalOffset(1.0, 0.0),

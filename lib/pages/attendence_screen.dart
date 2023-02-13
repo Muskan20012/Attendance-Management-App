@@ -41,15 +41,15 @@ class _AttendenceScreenState extends State<AttendenceScreen> {
           decoration: BoxDecoration(
             gradient: LinearGradient(
                 colors: [
-                  const Color(0xFF3366FF),
-                  const Color(0xFF00CCFF),
+                  const Color(0xFF6E3CBC),
+                  const Color(0xFFB983FF),
                 ],
                 begin: const FractionalOffset(0.0, 0.0),
                 end: const FractionalOffset(1.0, 0.0),
                 stops: [0.0, 1.0],
                 tileMode: TileMode.clamp),
           ),
-          height: 100,
+          height: 94,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.end,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -58,15 +58,17 @@ class _AttendenceScreenState extends State<AttendenceScreen> {
                 child: Text(
                   "Attendence",
                   style: TextStyle(
-                      fontWeight: FontWeight.w700, color: Colors.white),
+                      fontWeight: FontWeight.w600,
+                      color: Colors.white,
+                      fontSize: 20),
                 ),
-                margin: EdgeInsets.all(20),
+                margin: EdgeInsets.all(15),
               )
             ],
           ),
         ),
         SizedBox(
-          height: 20,
+          height: 200,
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,

@@ -19,7 +19,7 @@ class SettingObject extends StatelessWidget {
             }
           : () {},
       child: Container(
-        width: 160,
+        width: 150,
         height: 70,
         padding: EdgeInsets.all(10),
         decoration: BoxDecoration(

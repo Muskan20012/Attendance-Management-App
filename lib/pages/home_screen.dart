@@ -167,7 +167,7 @@ class HomeScreen extends StatelessWidget {
               children: [
                 Icon(
                   Icons.thumb_up_alt_outlined,
-                  color: Colors.deepPurple[800],
+                  color: Color(0xff6E3CBC),
                   size: 40,
                 ),
                 Column(
@@ -187,7 +187,7 @@ class HomeScreen extends StatelessWidget {
                       style: TextStyle(
                         fontWeight: FontWeight.w600,
                         // color: Colors.white,
-                        color: Colors.deepPurple[800],
+                        color: Color(0xff6E3CBC),
                       ),
                     ),
                   ],

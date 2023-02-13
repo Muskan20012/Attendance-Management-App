@@ -26,7 +26,7 @@ class MonthCard extends StatelessWidget {
           Icon(
             icon,
             size: 36,
-            color: Colors.deepPurple[900],
+            color: Color(0xff6E3CBC),
           ),
           SizedBox(height: 5),
           Row(

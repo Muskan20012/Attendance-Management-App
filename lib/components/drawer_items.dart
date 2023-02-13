@@ -15,6 +15,10 @@ class DrawerItems extends StatelessWidget {
         child: Column(
           children: [
             const CircleAvatar(
+              child: Icon(
+                Icons.account_circle,
+                size: 80,
+              ),
               radius: 40,
             ),
             const SizedBox(
